@@ -1,12 +1,14 @@
 # countdown.rb
-
-x = gets.chomp.to_i
-
-while x >=  0
-  puts x
-  x -= 1
+def count_to_zero(number)
+ 
+  if number <= 0 
+  	puts "#{number} is not acceptable"
+  else
+  	puts number
+  	count_to_zero(number - 1)
+  end
 end
 
-puts "Done"
-
-
+count_to_zero(10)
+count_to_zero(20)
+count_to_zero(-9)
