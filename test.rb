@@ -1,9 +1,6 @@
- def equal_to_four(x)
-      if x == 4
-        puts "yup"
-      else
-        puts "nope"
-    end
+def test(b)
+  b.map {|letter| "I like the letter: #{letter}"}
 end
 
-    equal_to_four(5)
+a = ['a', 'b', 'c']
+test(a)
